@@ -1,0 +1,33 @@
+.sliderContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 32px;
+}
+.WOsliderContainer {
+  display: none;
+}
+.sliderItemContainer {
+  display: flex;
+  justify-content: center;
+  padding: 12px 24px;
+}
+
+.sliderImg {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .sliderContainer {
+    display: none;
+  }
+  .WOsliderContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sliderItemContainer {
+    padding-bottom: 0;
+  }
+}

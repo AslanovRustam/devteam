@@ -8,7 +8,7 @@ export default function Menu({ active, setActive }) {
     >
       <div className={s.blur}>
         <div className={s.menuContent} onClick={(e) => e.stopPropagation()}>
-          <div className={s.menuHeader}>Burger menu</div>
+          <div className={s.menuHeader}>Menu</div>
           <ul className={s.menuList}>
             <li className={s.menuItem}>
               <a className={s.menuLink} href="">
@@ -18,6 +18,11 @@ export default function Menu({ active, setActive }) {
             <li className={s.menuItem}>
               <a className={s.menuLink} href="">
                 Slider
+              </a>
+            </li>
+            <li className={s.menuItem}>
+              <a className={s.menuLink} href="">
+                Contacts
               </a>
             </li>
             <li className={s.menuItem}>

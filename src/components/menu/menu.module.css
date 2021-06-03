@@ -34,14 +34,25 @@
 }
 .menuList {
   text-align: center;
+  width: 100%;
 }
 .menuLink {
   font-size: 24px;
 
-  color: white;
+  color: inherit;
 }
 .menuItem {
   margin: 10px;
+  color: white;
+  transform: scale(1);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menuItem:hover,
+.menuItem:focus {
+  background-color: white;
+  color: black;
+  border-radius: 2px;
+  transform: scale(1.2);
 }
 @media screen and (max-width: 767px) {
   .menuContent {
