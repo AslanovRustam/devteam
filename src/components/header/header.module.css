@@ -1,0 +1,46 @@
+nav {
+  /* position: fixed; */
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: gray;
+  z-index: 50;
+}
+.burgerBtn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.burgerBtn span {
+  position: absolute;
+  top: 14px;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+}
+.burgerBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 3px;
+
+  background-color: black;
+}
+.burgerBtn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 3px;
+
+  background-color: black;
+}
+@media screen and (min-width: 768px) {
+  .menuContent {
+    width: 80%;
+  }
+}

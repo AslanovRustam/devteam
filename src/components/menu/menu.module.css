@@ -1,0 +1,50 @@
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menuActive {
+  transform: translateX(0);
+}
+.blur {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /* backdrop-filter: blur(2px); */
+}
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background-color: black;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menuHeader {
+  text-align: center;
+  padding: 10px;
+  font-size: 32px;
+  color: white;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+.menuList {
+  text-align: center;
+}
+.menuLink {
+  font-size: 24px;
+
+  color: white;
+}
+.menuItem {
+  margin: 10px;
+}
+@media screen and (max-width: 767px) {
+  .menuContent {
+    width: 80%;
+  }
+}
