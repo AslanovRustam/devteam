@@ -1,8 +1,8 @@
 import React from "react";
 import s from "./carousel.module.css";
-import Nature from "../../images/nature.jpg";
-import Summer from "../../images/summer.jpg";
-import SummerNext from "../../images/summernext.jpg";
+import Tech from "../../images/tech.jpg";
+import Proc from "../../images/proc.jpg";
+import Computer from "../../images/computer.jpg";
 import Slider from "react-slick";
 
 export default function Carousel() {
@@ -19,25 +19,25 @@ export default function Carousel() {
       <div className={s.sliderContainer}>
         <Slider {...settings}>
           <div className={s.sliderItemContainer} style={{ display: "flex" }}>
-            <img className={s.sliderImg} src={Nature} alt="Winter"></img>
+            <img className={s.sliderImg} src={Tech} alt="Tech"></img>
           </div>
           <div className={s.sliderItemContainer} style={{ display: "flex" }}>
-            <img className={s.sliderImg} src={Summer} alt="Summer"></img>
+            <img className={s.sliderImg} src={Proc} alt="Proc"></img>
           </div>
           <div className={s.sliderItemContainer} style={{ display: "flex" }}>
-            <img className={s.sliderImg} src={SummerNext} alt="Spring"></img>
+            <img className={s.sliderImg} src={Computer} alt="Computer"></img>
           </div>
         </Slider>
       </div>
       <div className={s.WOsliderContainer}>
         <div className={s.sliderItemContainer} style={{ display: "flex" }}>
-          <img className={s.sliderImg} src={Nature} alt="Winter"></img>
+          <img className={s.sliderImg} src={Tech} alt="Tech"></img>
         </div>
         <div className={s.sliderItemContainer} style={{ display: "flex" }}>
-          <img className={s.sliderImg} src={Summer} alt="Summer"></img>
+          <img className={s.sliderImg} src={Proc} alt="Proc"></img>
         </div>
         <div className={s.sliderItemContainer} style={{ display: "flex" }}>
-          <img className={s.sliderImg} src={SummerNext} alt="Spring"></img>
+          <img className={s.sliderImg} src={Computer} alt="Computer"></img>
         </div>
       </div>
     </>

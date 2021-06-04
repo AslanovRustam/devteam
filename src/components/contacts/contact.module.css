@@ -1,0 +1,150 @@
+.requestSection {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  background: white;
+}
+.formSection {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.formIcon {
+  width: 343px;
+  height: 246px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.formTitle {
+  padding-top: 16px;
+  padding-bottom: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4f586b;
+}
+.formInformation {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f586b;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formLabel {
+  display: block;
+  width: 100%;
+  border-bottom: 1px dashed rgba(129, 103, 227, 0.2);
+}
+.formInput {
+  width: 100%;
+  padding-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  border: none;
+  opacity: 0.5;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8b92ab;
+}
+.formInput:hover,
+.formInput:focus {
+  color: #4f586b;
+  opacity: 1;
+}
+.formButton {
+  width: 192px;
+  height: 36px;
+  margin-bottom: 56px;
+  margin-top: 56px;
+  margin-left: 25%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  background: linear-gradient(236.84deg, #9c8bea 1.49%, #544695 105.35%);
+  box-shadow: -4px 4px 15px rgba(129, 103, 227, 0.2);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.formButton:hover,
+.formButton:focus {
+  background: linear-gradient(236.84deg, #b2f3b2 1.49%, #a6df0a 105.35%);
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .requestSection {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .requestSection {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1312px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .formSection {
+    width: 528px;
+  }
+  .formIcon {
+    width: 528px;
+    height: auto;
+    padding-right: 61px;
+    padding-bottom: 32px;
+  }
+  .formTitle {
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 32px;
+  }
+  .formContainer {
+    width: 752px;
+  }
+  .formLabel {
+    margin-bottom: 32px;
+  }
+  .formButton {
+    width: 183px;
+    height: 48px;
+    margin-bottom: 8px;
+    margin-top: 48px;
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+  }
+}
