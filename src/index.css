@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: black;
 }
 
 code {
@@ -20,4 +19,12 @@ h2 {
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+.slick-prev::before,
+.slick-prev::after {
+  color: black;
+}
+.slick-next::before,
+.slick-prev::before {
+  color: black;
 }

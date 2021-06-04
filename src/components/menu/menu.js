@@ -11,22 +11,38 @@ export default function Menu({ active, setActive }) {
           <div className={s.menuHeader}>Menu</div>
           <ul className={s.menuList}>
             <li className={s.menuItem}>
-              <a className={s.menuLink} href="">
+              <a
+                className={s.menuLink}
+                href="#header"
+                onClick={() => setActive(false)}
+              >
                 Home
               </a>
             </li>
             <li className={s.menuItem}>
-              <a className={s.menuLink} href="">
+              <a
+                className={s.menuLink}
+                href="#slider"
+                onClick={() => setActive(false)}
+              >
                 Slider
               </a>
             </li>
             <li className={s.menuItem}>
-              <a className={s.menuLink} href="">
+              <a
+                className={s.menuLink}
+                href="#contacts"
+                onClick={() => setActive(false)}
+              >
                 Contacts
               </a>
             </li>
             <li className={s.menuItem}>
-              <a className={s.menuLink} href="">
+              <a
+                className={s.menuLink}
+                href="#footer"
+                onClick={() => setActive(false)}
+              >
                 Footer
               </a>
             </li>

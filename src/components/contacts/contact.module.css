@@ -1,5 +1,5 @@
 .requestSection {
-  width: 375px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 375px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
@@ -23,7 +23,7 @@
   margin-bottom: 24px;
 }
 .formIcon {
-  width: 343px;
+  width: 100%;
   height: 246px;
   margin-top: 24px;
   margin-bottom: 16px;
@@ -90,7 +90,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
-  background: linear-gradient(236.84deg, #9c8bea 1.49%, #544695 105.35%);
+  background: linear-gradient(to bottom, #000099 0%, #333300 100%);
   box-shadow: -4px 4px 15px rgba(129, 103, 227, 0.2);
   border-radius: 50px;
   border: none;
@@ -100,6 +100,7 @@
 .formButton:hover,
 .formButton:focus {
   background: linear-gradient(236.84deg, #b2f3b2 1.49%, #a6df0a 105.35%);
+  color: black;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .requestSection {

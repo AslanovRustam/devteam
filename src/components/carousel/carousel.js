@@ -16,7 +16,7 @@ export default function Carousel() {
   };
   return (
     <>
-      <div className={s.sliderContainer}>
+      <div id="#slider" className={s.sliderContainer}>
         <Slider {...settings}>
           <div className={s.sliderItemContainer} style={{ display: "flex" }}>
             <img className={s.sliderImg} src={Tech} alt="Tech"></img>
@@ -29,7 +29,7 @@ export default function Carousel() {
           </div>
         </Slider>
       </div>
-      <div className={s.WOsliderContainer}>
+      <div id="#slider" className={s.WOsliderContainer}>
         <div className={s.sliderItemContainer} style={{ display: "flex" }}>
           <img className={s.sliderImg} src={Tech} alt="Tech"></img>
         </div>

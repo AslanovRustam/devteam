@@ -17,25 +17,25 @@ export default function Header() {
         </nav>
         <Menu active={menuActive} setActive={setMenuActive} />
       </div>
-      <div className={s.headerMenu}>
+      <div id="header" className={s.headerMenu}>
         <ul className={s.menuList}>
           <li className={s.menuItem}>
-            <a className={s.menuLink} href="">
+            <a className={s.menuLink} href="#header">
               Home
             </a>
           </li>
           <li className={s.menuItem}>
-            <a className={s.menuLink} href="">
+            <a className={s.menuLink} href="#slider">
               Slider
             </a>
           </li>
           <li className={s.menuItem}>
-            <a className={s.menuLink} href="">
+            <a className={s.menuLink} href="#contacts">
               Contacts
             </a>
           </li>
           <li className={s.menuItem}>
-            <a className={s.menuLink} href="">
+            <a className={s.menuLink} href="#footer">
               Footer
             </a>
           </li>

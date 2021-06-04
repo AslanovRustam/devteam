@@ -5,7 +5,7 @@ import Contact from "../../images/contact.jpg";
 export default function FormRequest() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [dateOfBirthd, setDateOfBirthd] = useState("");
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
   const handleNameChange = (e) => {
@@ -14,8 +14,8 @@ export default function FormRequest() {
   const handleEmailChange = (e) => {
     setEmail(e.currentTarget.value);
   };
-  const handleDateChange = (e) => {
-    setDateOfBirthd(e.currentTarget.value);
+  const handlePhoneChange = (e) => {
+    setPhone(e.currentTarget.value);
   };
   const handleEMessageChange = (e) => {
     setMessage(e.currentTarget.value);
@@ -26,7 +26,7 @@ export default function FormRequest() {
     console.log(
       `name: ${name},`,
       `email: ${email},`,
-      `dateOfBirthd: ${dateOfBirthd},`,
+      `phone: ${phone},`,
       `message: ${message}`
     );
     resetForm();
@@ -35,19 +35,18 @@ export default function FormRequest() {
   const resetForm = () => {
     setName("");
     setEmail("");
-    setDateOfBirthd("");
+    setPhone("");
     setMessage("");
   };
 
   return (
-    <div className={s.requestSection} id="formsubmit">
+    <div id="contacts" className={s.requestSection}>
       <div className={s.formSection}>
         <img className={s.formIcon} src={Contact} alt="contact"></img>
-        <h2 className={s.formTitle}>Request info</h2>
+        <h2 className={s.formTitle}>Contact Us</h2>
         <p className={s.formInformation}>
-          Got a question? Need to see a demo? Want to start your free trial
-          subscription? We'd love to hear from you! Contact us and we will get
-          back to you shortly.
+          Got a question? Need to see a demo? Contact us and we will get back to
+          you shortly.
         </p>
       </div>
       <form className={s.formContainer} onSubmit={handleSubmit}>
@@ -74,11 +73,11 @@ export default function FormRequest() {
         <label className={s.formLabel}>
           <input
             className={s.formInput}
-            type="date"
-            placeholder="Date of Birth*"
-            name="dateOfBirthd"
-            value={dateOfBirthd}
-            onChange={handleDateChange}
+            type="phone"
+            placeholder="Phone*"
+            name="phone"
+            value={phone}
+            onChange={handlePhoneChange}
           ></input>
         </label>
         <label className={s.formLabel}>
@@ -92,7 +91,7 @@ export default function FormRequest() {
           ></input>
         </label>
         <button className={s.formButton} type="submit">
-          Request Info
+          Send Contact
         </button>
       </form>
     </div>

@@ -15,14 +15,7 @@
 .sliderImg {
   width: 100%;
 }
-/* .slick-prev::before,
-.slick-prev::after {
-  color: black;
-}
-.slick-next::before,
-.slick-prev::before {
-  color: black;
-} */
+
 @media screen and (max-width: 767px) {
   .sliderContainer {
     display: none;
